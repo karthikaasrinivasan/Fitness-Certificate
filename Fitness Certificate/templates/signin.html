@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIT FC Portal</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='signin.css') }}">
+    <script src="{{ url_for('static', filename='signin.js') }}"></script>
+</head>
+<body>
+    <!-- Main container that centers horizontally and vertically -->
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="rectangle text-center p-4 rounded shadow-sm">
+            <div class="form mb-3">
+                <p class="lead">Welcome Back!</p> <!-- Lead class for larger text -->
+            </div>
+            <img src="bitlogo.png" alt="Logo" class="logo img-fluid mb-3">
+            <div class="logo-text mb-3">BIT Fitness Certificate Portal</div>
+            <!-- Button that goes to another page-->
+            <button class="button btn btn-primary btn-lg" onclick="window.location.href='reportanalysis.html'">Google Sign In</button>
+            <div class="login-text mt-3"><a href="login.html" class="btn btn-link">Login</a></div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

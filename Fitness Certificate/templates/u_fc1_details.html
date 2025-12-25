@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIT FC Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='u_fc1_details.css') }}">
+    <script src="{{ url_for('static', filename='u_fc1_details.js') }}"></script>
+</head>
+<body>
+
+<div class="sidebar">
+    <ul>
+        <li><a href="{{ url_for('uavailablefc') }}">Available FC</a></li>
+        <li><a href="{{ url_for('ureportdetails') }}">Reports</a></li>
+        <li><a href="{{ url_for('signin') }}">Log out</a></li>
+    </ul>
+</div>
+
+<div class="titlebar">
+    <img src="fclogo.png" alt="BIT FC Logo">
+    BIT FC Portal
+    <input type="text" placeholder="Search...">
+</div>
+
+<div class="content">
+    <div class="main-auditorium">
+        <p>&nbsp;&nbsp;FC 1 - Main Auditorium</p>
+    </div>
+</div>
+
+<div class="question">
+    <p>1. Is the main auditorium adequately equipped with modern audiovisual technology for teaching purposes?</p>
+    <input type="radio" id="option1" name="options1">
+    <label for="option1">Yes</label>
+    <input type="radio" id="option2" name="options2">
+    <label for="option2">No</label>
+</div>
+
+<div class="question">
+    <p>2. Does the main auditorium provide sufficient seating capacity for conducting lectures and seminars?</p>
+    <input type="radio" id="option1" name="options3">
+    <label for="option1">Yes</label>
+    <input type="radio" id="option2" name="options4">
+    <label for="option2">No</label>
+</div>
+
+<div class="question">
+    <p>3. Are the acoustics of the main auditorium conducive to clear communication during lectures?</p>
+    <input type="radio" id="option1" name="options5">
+    <label for="option1">Yes</label>
+    <input type="radio" id="option2" name="options6">
+    <label for="option2">No</label>
+</div>
+
+<div class="question">
+    <p>4. Is the lighting in the main auditorium suitable for creating an optimal learning environment?</p>
+    <input type="radio" id="option1" name="options7">
+    <label for="option1">Yes</label>
+    <input type="radio" id="option2" name="options8">
+    <label for="option2">No</label>
+</div>
+
+<div class="question">
+    <p>5. Are the facilities in the main auditorium well-maintained and in good condition?</p>
+    <input type="radio" id="option1" name="options9">
+    <label for="option1">Yes</label>
+    <input type="radio" id="option2" name="options10">
+    <label for="option2">No</label>
+</div>
+
+<div class="question">
+    <p>6. Does the layout of the main auditorium facilitate student engagement and interaction during classes?</p>
+    <input type="radio" id="option1" name="options11">
+    <label for="option1">Yes</label>
+    <input type="radio" id="option2" name="options12">
+    <label for="option2">No</label>
+</div>
+
+<div class="question">
+    <p>7. Is the main auditorium well-ventilated to ensure fresh air circulation?</p>
+    <input type="radio" id="option1" name="options13">
+    <label for="option1">Yes</label>
+    <input type="radio" id="option2" name="options14">
+    <label for="option2">No</label>
+</div>
+
+<div class="question">
+    <p>8. Is the main auditorium equipped with climate control systems to maintain a comfortable temperature?</p>
+    <input type="radio" id="option1" name="options15">
+    <label for="option1">Yes</label>
+    <input type="radio" id="option2" name="options16">
+    <label for="option2">No</label>
+</div>
+
+<div class="question">
+    <p>9. Is the main auditorium equipped with comfortable seating?</p>
+    <input type="radio" id="option1" name="options17">
+    <label for="option1">Yes</label>
+    <input type="radio" id="option2" name="options18">
+    <label for="option2">No</label>
+</div>
+
+<div class="question">
+    <p>10. Is the main auditorium equipped with projection screens for presentations?</p>
+    <input type="radio" id="option1" name="options19">
+    <label for="option1">Yes</label>
+    <input type="radio" id="option2" name="options20">
+    <label for="option2">No</label>
+</div>
+
+<div class="question">
+    <p>11. Are the flooring materials in the main auditorium intact and free from damage or tripping hazards?</p>
+    <input type="radio" id="option1" name="options21">
+    <label for="option1">Yes</label>
+    <input type="radio" id="option2" name="options22">
+    <label for="option2">No</label>
+</div>
+
+<div class="question">
+    <p>12. Are the restroom facilities adjacent to the main auditorium clean, functional, and well-stocked with necessary supplies?</p>
+    <input type="radio" id="option1" name="options23">
+    <label for="option1">Yes</label>
+    <input type="radio" id="option2" name="options24">
+    <label for="option2">No</label>
+</div>
+
+<div class="question">
+    <p>13. Are the audiovisual systems in the main auditorium fully operational and free from technical issues?</p>
+    <input type="radio" id="option1" name="options25">
+    <label for="option1">Yes</label>
+    <input type="radio" id="option2" name="options26">
+    <label for="option2">No</label>
+</div>
+
+<div class="question">
+    <p>14. Is the main auditorium's stage area clean and well-maintained, with no signs of damage or deterioration?</p>
+    <input type="radio" id="option1" name="options27">
+    <label for="option1">Yes</label>
+    <input type="radio" id="option2" name="options28">
+    <label for="option2">No</label>
+</div>
+
+<div class="question">
+    <p>15. Are the emergency exits in the main auditorium clearly marked and easily accessible in case of evacuation?</p>
+    <input type="radio" id="option1" name="options29">
+    <label for="option1">Yes</label>
+    <input type="radio" id="option2" name="options30">
+    <label for="option2">No</label>
+</div>
+
+<button type="submit">Submit</button>
+
+</body>
+</html>

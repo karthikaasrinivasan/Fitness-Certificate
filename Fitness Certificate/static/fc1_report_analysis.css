@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #2aa5e7;
+    color: #fff;
+    padding-top: 90px;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar ul li {
+    padding: 10px;
+    border-bottom: 1px solid #e9e1e1;
+}
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.titlebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #2aa5e7;
+    color: #fff;
+    font-size: 29px;
+    padding: 18px;
+    text-align: left; 
+    box-sizing: border-box; 
+}
+.titlebar img {
+    width: 30px; 
+    height: 30px;
+    margin-right: 5px;
+}
+.titlebar input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    margin-left: 40px;
+    border-radius: 5px;
+    border-color: black;
+}
+.content {
+    margin-left: 710px;
+    padding: 10px;
+    font-size: 25px;
+    margin-top: 80px;
+}
+.container {
+    width: calc(33.33% - 10px);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 260px;
+    margin-top: 40px;
+}
+
+.form {
+    width: 80%;
+    height: 70%;
+    padding: 20px;
+    border: 2px solid #333; 
+    border-radius: 10px;
+    margin-top: 15px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.form p{
+    margin-top: -3px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /*semi transparent background*/
+    z-index: 999; /*top of other elements*/
+}
+
+.overlay-content {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /*shadow*/
+    z-index: 1000;
+}
+
+#final-report-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; 
+    margin-left: 300px;
+    margin-top: 40px;
+}
+
+#final-report-button:hover {
+    background-color: #45a049;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+}
+

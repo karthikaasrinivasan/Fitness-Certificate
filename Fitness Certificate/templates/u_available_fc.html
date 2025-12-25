@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIT FC Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='u_available_fc.css') }}">
+    <script src="{{ url_for('static', filename='u_available_fc.js') }}"></script>
+</head>
+<body>
+
+<div class="sidebar">
+    <ul>
+        <li><a href="#">Available FC</a></li>
+        <li><a href="{{ url_for('ureportdetails') }}">Reports</a></li>
+        <li><a href="{{ url_for('signin') }}">Log out</a></li>
+    </ul>
+</div>
+
+<div class="titlebar">
+    <img src="fclogo.png" alt="BIT FC Logo">
+    BIT FC Portal
+    <input type="text" placeholder="Search...">
+</div>
+
+<div class="content">
+    <p>&nbsp;Available FC</p>
+</div>
+
+<div class="parent-container">
+    <div class="container">
+        <div class="form">
+            <p id="fc1Text"><a href="u_fc1_details.html"></a>FC 1 - Main Auditorium</p>
+            <br><hr>
+            <p>Duration : 15 days</p>
+            <p>From  : Apr 1, 2024</p>
+            <p>To  : Apr 15, 2024</p>
+        </div>
+    </div>
+
+</body>
+</html>

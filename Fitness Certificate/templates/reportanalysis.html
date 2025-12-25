@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIT FC Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='reportanalysis.css') }}">
+    <script src="{{ url_for('static', filename='reportanalysis.js') }}"></script>
+</head>
+<body>
+
+<div class="sidebar">
+    <ul>
+        <li><a href="#">Report Analysis</a></li>
+        <li><a href="{{ url_for('Categories') }}">FC Categories</a></li>
+        <li><a href="{{ url_for('reports') }}">Reports</a></li>
+        <li><a href="{{ url_for('signin') }}">Log out</a></li>
+    </ul>
+</div>
+
+<div class="titlebar">
+    <img src="fclogo.png" alt="BIT FC Logo">
+    BIT FC Portal
+    <input type="text" placeholder="Search...">
+</div>
+
+<div class="content">
+    <p>Overall Report Analysis</p>
+</div>
+
+<div class="container">
+    <div class="form">
+        <p>Total number of FC Categories<br><br></p>
+        <div class="form1">
+            <p>50</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="form">
+        <p>Number of ongoing FC</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="form">
+        <p>Number of completed FC</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="form">
+        <p>Number of reports generated</p>
+    </div>
+</div>
+
+</body>
+</html>

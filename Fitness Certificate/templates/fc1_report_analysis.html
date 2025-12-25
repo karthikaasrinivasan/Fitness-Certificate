@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIT FC Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='fc1_report_analysis.css') }}">
+    <script src="{{ url_for('static', filename='fc1_report_analysis.js') }}"></script>
+</head>
+<body>
+
+<div class="sidebar">
+    <ul>
+        <li><a href="{{ url_for('reportanalysis') }}">Report Analysis</a></li>
+        <li><a href="{{ url_for('Categories') }}">FC Categories</a></li>
+        <li><a href="{{ url_for('reports') }}">Reports</a></li>
+        <li><a href="{{ url_for('signin') }}">Log out</a></li>
+    </ul>
+</div>
+
+<div class="titlebar">
+    <img src="fclogo.png" alt="BIT FC Logo">
+    BIT FC Portal
+    <input type="text" placeholder="Search...">
+</div>
+
+<div class="content">
+    <p>FC 1 - Report Analysis</p>
+</div>
+
+<div class="container">
+    <div class="form">
+        <!-- overlay-->
+        <p id="total-questions-overlay-trigger" class="overlay-trigger" data-content="total-questions-overlay-content">Total number of FC 1 Questions</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="form">
+        <p id="positive-questions-overlay-trigger" class="overlay-trigger" data-content="positive-questions-overlay-content">Number of questions with positive (Yes) feedback</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="form">
+        <p id="negative-questions-overlay-trigger" class="overlay-trigger" data-content="negative-questions-overlay-content">Number of questions with negative (No) feedback</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="form">
+        <p id="consecutive-negative-overlay-trigger" class="overlay-trigger" data-content="consecutive-negative-overlay-content">Number of three consecutive negative (No) feedback</p>
+    </div>
+</div>
+
+<div id="overlay" class="overlay">
+        <div id="total-questions-overlay-content" class="overlay-content">
+            <p>Total FC 1 Questions<hr>1.<br>2.<br>3.<br>4.<br>5.<br>6.<br>7.<br>8.<br>9.<br>10.<br>11.<br>12.<br>13.<br>14.<br>15.<br></p>
+        </div>
+        <div id="positive-questions-overlay-content" class="overlay-content">
+            <p>Questions with positive (Yes) feedback<hr>1.<br>2.<br>3.<br>4.<br>5.<br>6.<br>7.<br>8.<br></p>
+        </div>
+        <div id="negative-questions-overlay-content" class="overlay-content">
+            <p>Questions with negative (No) feedback<hr>1.<br>2.<br>3.<br>4.<br>5.<br>6.<br>7.<br></p>
+        </div>
+        <div id="consecutive-negative-overlay-content" class="overlay-content">
+            <p>Questions with three consecutive negative (No) feedback<hr>1.<br>2.<br>3.<br></p>
+        </div>
+</div>
+
+<a href="fc1_final_report.html" id="final-report-button" class="button">Final Report</a>
+
+</body>
+</html>

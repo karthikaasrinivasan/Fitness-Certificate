@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIT FC Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+    <script src="{{ url_for('static', filename='login.js') }}"></script>
+</head>
+<body>
+    <div class="container mt-5 d-flex justify-content-center align-items-center min-vh-100">
+        <div class="rectangle text-center p-4 rounded shadow-sm">
+            <img src="bitlogo.png" alt="Logo" class="logo img-fluid">
+            <div class="logo-text">BIT Fitness Certificate Portal</div>
+            <form onsubmit="return validateForm()"> <!--login form with validation-->
+                <div class="form-row align-items-center mb-3">
+                    <div class="col-auto">
+                        <label for="username" class="col-form-label">Username</label> 
+                    </div>
+                    <div class="col">
+                        <input type="text" id="username" name="username" class="form-control input-box" placeholder="Enter your username">
+                        <div id="username-error" class="invalid-feedback"></div>
+                    </div>
+                </div>
+                <div class="form-row align-items-center mb-3">
+                    <div class="col-auto">
+                        <label for="password" class="col-form-label">Password</label>
+                    </div>
+                    <div class="col">
+                        <input type="password" id="password" name="password" class="form-control input-box" placeholder="Enter your password">
+                        <div id="password-error" class="invalid-feedback"></div>
+                    </div>
+                </div>
+                <button type="submit" class="button btn btn-primary btn-block">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

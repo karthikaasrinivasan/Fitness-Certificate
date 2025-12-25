@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIT FC Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='fc1_report_list.css') }}">
+    <script src="{{ url_for('static', filename='fc1_report_list.js') }}"></script>
+</head>
+<body>
+
+<div class="sidebar">
+    <ul>
+        <li><a href="{{ url_for('reportanalysis') }}">Report Analysis</a></li>
+        <li><a href="{{ url_for('Categories') }}">FC Categories</a></li>
+        <li><a href="{{ url_for('reports') }}">Reports</a></li>
+        <li><a href="{{ url_for('signin') }}">Log out</a></li>
+    </ul>
+</div>
+
+<div class="titlebar">
+    <img src="fclogo.png" alt="BIT FC Logo">
+    BIT FC Portal
+    <input type="text" placeholder="Search...">
+</div>
+
+<div class="content">
+    <p>&nbsp;&nbsp;FC 1 - Main Auditorium Reports</p>
+    <input type="text" placeholder="Search...">
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>S.No</th>
+            <th>FC Duration</th>
+            <th>Date of Submission</th>
+            <th>Report</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td><td>1 Apr, 2024 - 15 Apr, 2024 (15 Days)</td><td>13 Apr, 2024</td>
+            <td id="fc1Text1"><a href="fc1_report_analysis.html"></a>Apr 1 Report</td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
